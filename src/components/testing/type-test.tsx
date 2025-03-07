@@ -85,10 +85,10 @@ export default function TypeTest() {
           <figure className="mt-10 border-l border-primary pl-9">
             <blockquote className="font-semibold">
               <p>
-                "Vel ultricies morbi odio facilisi ultrices accumsan donec lacus
+                Vel ultricies morbi odio facilisi ultrices accumsan donec lacus
                 purus. Lectus nibh ullamcorper ac dictum justo in euismod. Risus
                 aenean ut elit massa. In amet aliquet eget cras. Sem volutpat
-                enim tristique."
+                enim tristique
               </p>
             </blockquote>
             <figcaption className="mt-6 flex gap-x-4">

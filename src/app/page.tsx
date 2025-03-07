@@ -1,6 +1,11 @@
-import { Button } from "@/components/ui/button";
-import TypeTest from "@/components/utility/type-test";
+import InputTest from "@/components/testing/input-test";
+import TypeTest from "@/components/testing/type-test";
 
 export default function Home() {
-  return <TypeTest />;
+  return (
+    <main>
+      <InputTest />
+      <TypeTest />
+    </main>
+  );
 }
