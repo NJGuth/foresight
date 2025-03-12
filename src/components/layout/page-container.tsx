@@ -3,5 +3,7 @@ export default function PageContainer({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return <main className="p-6">{children}</main>;
+  return (
+    <main className="p-6 container mx-auto max-w-screen-3xl">{children}</main>
+  );
 }
