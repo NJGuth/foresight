@@ -83,8 +83,8 @@
 .dark {
   --background: var(--color-stone-950);
   --foreground: var(--color-stone-50);
-  --card: oklch(0.145 0 0);
-  --card-foreground: oklch(0.985 0 0);
+  --card: var(--color-stone-900);
+  --card-foreground: var(--color-stone-50);
   --popover: oklch(0.145 0 0);
   --popover-foreground: oklch(0.985 0 0);
   --primary: var(--color-purple-500);
