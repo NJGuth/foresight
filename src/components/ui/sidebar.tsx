@@ -263,7 +263,7 @@ function SidebarTrigger({
       data-slot="sidebar-trigger"
       variant="ghost"
       size="icon"
-      className={cn("h-7 w-7", className)}
+      className={cn("h-7 w-7 ", className)}
       onClick={(event) => {
         onClick?.(event);
         toggleSidebar();
@@ -478,6 +478,8 @@ const sidebarMenuButtonVariants = cva(
         default: "hover:bg-sidebar-accent hover:text-sidebar-accent-foreground",
         outline:
           "bg-background shadow-[0_0_0_1px_hsl(var(--sidebar-border))] hover:bg-sidebar-accent hover:text-sidebar-accent-foreground hover:shadow-[0_0_0_1px_hsl(var(--sidebar-accent))]",
+        hollow:
+          "hover:bg-sidebar-accent  hover:text-sidebar-accent-foreground data-[active=true]:font-bold data-[active=true]:bg-transparent",
       },
       size: {
         default: "h-8 text-sm",
