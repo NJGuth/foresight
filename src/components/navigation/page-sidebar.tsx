@@ -10,7 +10,7 @@ export function PageSidebar() {
   return (
     <Sidebar variant="floating" side="right">
       <SidebarHeader />
-      <SidebarContent>
+      <SidebarContent className="border-border">
         <SidebarGroup />
         Page Sidebar
         <SidebarGroup />
