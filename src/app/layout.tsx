@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist } from "next/font/google";
 import { swissFont } from "@/styles/fonts";
 import "@/styles/globals.css";
+
 import { ThemeProvider } from "@/components/utility/theme-provider";
 import { ThemeHotkey } from "@/components/utility/theme-hotkey";
 import { ScreenSize } from "@/components/utility/screen-size";

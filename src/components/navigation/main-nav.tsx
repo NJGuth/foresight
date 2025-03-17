@@ -34,7 +34,7 @@ export function MainNav({
             asChild
             isActive={item.isActive ?? pathname === item.url}
             className={cn(
-              "h-11",
+              "h-11 px-3.5 hover:bg-accent text-lg font-medium ",
               item.isActive ?? pathname === item.url
                 ? "transparent"
                 : "bg-transparent"
@@ -43,15 +43,24 @@ export function MainNav({
             <Link href={item.url} onClick={() => setOpenMobile(false)}>
               <span
                 className={cn(
-                  "mr-2 size-6",
+                  "mr-2 size-6 ",
                   item.isActive ?? pathname === item.url
-                    ? "text-sidebar-accent-foreground"
-                    : "text-muted-foreground"
+                    ? "opacity-100"
+                    : "opacity-80 hover:opacity-100"
                 )}
               >
                 {item.icon}
               </span>
-              <span>{item.title}</span>
+              <span
+                className={cn(
+                  "",
+                  item.isActive ?? pathname === item.url
+                    ? "text-foreground"
+                    : "text-muted-foreground"
+                )}
+              >
+                {item.title}
+              </span>
             </Link>
           </SidebarMenuButton>
         </SidebarMenuItem>

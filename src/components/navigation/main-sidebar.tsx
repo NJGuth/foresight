@@ -8,27 +8,28 @@ import {
 } from "@/components/ui/sidebar";
 import { MainNav } from "./main-nav";
 import { LearnIcon, GenomesIcon, ProjectsIcon, LeadersIcon } from "../icons";
+import OrgNav from "./org-nav";
 const data = {
   items: [
     {
       title: "Projects",
       url: "/projects",
-      icon: <ProjectsIcon />,
+      icon: <ProjectsIcon className="text-blue-500" />,
     },
     {
       title: "Leaders",
       url: "/leaders",
-      icon: <LeadersIcon />,
+      icon: <LeadersIcon className="text-green-500" />,
     },
     {
       title: "Genomes",
       url: "/genomes",
-      icon: <GenomesIcon />,
+      icon: <GenomesIcon className="text-purple-500" />,
     },
     {
       title: "Learn",
       url: "/learn",
-      icon: <LearnIcon />,
+      icon: <LearnIcon className="text-amber-500" />,
     },
   ],
 };
@@ -36,7 +37,9 @@ const data = {
 export function MainSidebar() {
   return (
     <Sidebar variant="inset" side="left">
-      <SidebarHeader />
+      <SidebarHeader>
+        <OrgNav />
+      </SidebarHeader>
       <SidebarContent>
         <MainNav items={data.items} />
       </SidebarContent>
