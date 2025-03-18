@@ -9,6 +9,9 @@ import {
 import { MainNav } from "./main-nav";
 import { LearnIcon, GenomesIcon, ProjectsIcon, LeadersIcon } from "../icons";
 import OrgNav from "./org-nav";
+import { UserNav } from "./user-nav";
+
+// Navigation Items
 const data = {
   items: [
     {
@@ -38,6 +41,13 @@ const data = {
   ],
 };
 
+// Mock user Data; Todo: Replace with Clerk Data
+const userData = {
+  name: "Nicholas Guthrie",
+  email: "nicholas.g@example.com",
+  avatar: "https://github.com/NJGuth.png",
+};
+
 export function MainSidebar() {
   return (
     <Sidebar variant="inset" side="left">
@@ -47,7 +57,9 @@ export function MainSidebar() {
       <SidebarContent>
         <MainNav items={data.items} />
       </SidebarContent>
-      <SidebarFooter />
+      <SidebarFooter>
+        <UserNav user={userData} />
+      </SidebarFooter>
     </Sidebar>
   );
 }
