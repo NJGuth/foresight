@@ -3,7 +3,7 @@ import { Settings } from "lucide-react";
 import { Avatar, AvatarFallback } from "../ui/avatar";
 import { Button } from "../ui/button";
 // import { useClerk, useOrganization } from "@clerk/nextjs";
-// import { OrgSwitch } from "./org-switcher";
+import { OrgSwitch } from "./org-switch";
 
 export default function OrgNav() {
   //   const { openOrganizationProfile } = useClerk();
@@ -12,7 +12,7 @@ export default function OrgNav() {
   //   if (!organization) return null;
 
   return (
-    <div className="grid gap-2 px-2.5 py-2 ">
+    <div className="grid gap-2 pl-2.5 pr-1 py-2 ">
       <div className="flex justify-between">
         <Avatar className="w-12 h-12 rounded-md border">
           {/* <AvatarImage src={organization.imageUrl} alt={organization.name} /> */}
@@ -21,15 +21,16 @@ export default function OrgNav() {
             FS
           </AvatarFallback>
         </Avatar>
-        <div>
-          {/* <OrgSwitch /> */}
+        <div className="space-x-1">
+          <OrgSwitch />
 
           <Button
             variant="ghost"
             size="icon"
+            className="size-7"
             // onClick={() => openOrganizationProfile()}
           >
-            <Settings className="h-4 w-4" />
+            <Settings />
           </Button>
         </div>
       </div>
