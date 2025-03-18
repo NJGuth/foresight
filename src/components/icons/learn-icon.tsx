@@ -9,7 +9,7 @@ const LearnIcon: React.FC<React.SVGProps<SVGSVGElement>> = ({
     xmlns="http://www.w3.org/2000/svg"
     {...props}
   >
-    <g opacity="0.12">
+    <g opacity="0.3">
       <path
         d="M8.82843 12.1716C10.3905 13.7337 10.3905 16.2663 8.82843 17.8284C7.26634 19.3905 4.73367 19.3905 3.17157 17.8284C1.60948 16.2663 1.60948 13.7337 3.17157 12.1716C4.73366 10.6095 7.26633 10.6095 8.82843 12.1716Z"
         fill="currentColor"
