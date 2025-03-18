@@ -1,6 +1,6 @@
 "use client";
 import { Settings } from "lucide-react";
-import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar";
+import { Avatar, AvatarFallback } from "../ui/avatar";
 import { Button } from "../ui/button";
 // import { useClerk, useOrganization } from "@clerk/nextjs";
 // import { OrgSwitch } from "./org-switcher";
