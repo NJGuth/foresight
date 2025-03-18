@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist } from "next/font/google";
+import { Geist, Inter } from "next/font/google";
 import { swissFont } from "@/styles/fonts";
 import "@/styles/globals.css";
 
@@ -9,6 +9,11 @@ import { ScreenSize } from "@/components/utility/screen-size";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
+  subsets: ["latin"],
+});
+
+const inter = Inter({
+  variable: "--font-inter",
   subsets: ["latin"],
 });
 
@@ -25,7 +30,9 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={` ${swissFont.variable} ${geistSans.variable} antialiased`}
+        className={`
+          ${geistSans.variable} ${inter.variable} ${swissFont.variable}
+           antialiased`}
       >
         <ThemeProvider
           attribute="class"

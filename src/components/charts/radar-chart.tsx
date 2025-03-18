@@ -18,7 +18,7 @@ interface ValueChartProps {
 const chartConfig = {
   score: {
     label: "Score",
-    color: "var(--chart-4)",
+    color: "var(--color-plum-9)",
   },
 } satisfies ChartConfig;
 
@@ -37,7 +37,7 @@ export function ValuesRadar({ data }: ValueChartProps) {
         <PolarGrid gridType="circle" />
         <Radar
           dataKey="score"
-          fill="var(--chart-4)"
+          fill="var(--color-plum-9)"
           fillOpacity={0.2}
           dot={{
             r: 4,

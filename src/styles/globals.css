@@ -27,13 +27,13 @@
   --color-border: var(--color-base-6);
 
   /* Depth */
-  --color-primary: var(--color-grass-9);
+  --color-primary: var(--color-plum-9);
   --color-primary-foreground: var(--color-white);
-  --color-secondary: var(--color-base-2);
-  --color-secondary-foreground: var(--color-base-12);
-  --color-accent: var(--color-grass-4);
-  --color-accent-foreground: var(--color-grass-11);
-  --color-accent-border: var(--color-grass-8);
+  --color-secondary: var(--color-plum-4);
+  --color-secondary-foreground: var(--color-plum-11);
+  --color-accent: var(--color-plum-4);
+  --color-accent-foreground: var(--color-plum-11);
+  --color-accent-border: var(--color-plum-8);
 
   /* Elemements */
   --color-card: var(--color-base-1);
@@ -46,15 +46,15 @@
   /* Sidebar */
   --color-sidebar: var(--color-base-2);
   --color-sidebar-foreground: var(--color-base-12);
-  --color-sidebar-primary: var(--color-grass-9);
+  --color-sidebar-primary: var(--color-plum-9);
   --color-sidebar-primary-foreground: var(--color-white);
-  --color-sidebar-accent: var(--color-grass-4);
-  --color-sidebar-accent-foreground: var(--color-grass-9);
-  --color-sidebar-ring: var(--color-grass-7);
+  --color-sidebar-accent: var(--color-plum-4);
+  --color-sidebar-accent-foreground: var(--color-plum-9);
+  --color-sidebar-ring: var(--color-plum-7);
   --color-sidebar-border: var(--color-base-6);
 
   /* Charts */
-  --color-chart-1: var(--color-grass-7);
+  --color-chart-1: var(--color-plum-7);
   --color-chart-2: var(--color-sky-7);
   --color-chart-3: var(--color-lime-7);
   --color-chart-4: var(--color-crimson-7);
@@ -62,8 +62,8 @@
 
   /* Inputs */
   --color-input: var(--color-base-7);
-  --color-ring: var(--color-grass-7);
-  --color-carrat: var(--color-grass-9);
+  --color-ring: var(--color-plum-7);
+  --color-carrat: var(--color-plum-9);
 
   /* Radius */
   --radius-sm: calc(var(--radius) - 4px);

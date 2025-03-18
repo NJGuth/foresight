@@ -60,8 +60,3 @@ export function MainNav({
     </SidebarMenu>
   );
 }
-
-// className={cn(
-//   "h-11 px-3.5  hover:bg-accent text-lg font-medium ",
-//   item.isActive ?? pathname === item.url ? `bg-${item.color}-1` : ""
-// )}
