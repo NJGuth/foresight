@@ -13,23 +13,27 @@ const data = {
   items: [
     {
       title: "Projects",
+      color: "blue",
       url: "/projects",
-      icon: <ProjectsIcon className="text-blue-500" />,
+      icon: <ProjectsIcon />,
     },
     {
       title: "Leaders",
+      color: "green",
       url: "/leaders",
-      icon: <LeadersIcon className="text-green-500" />,
+      icon: <LeadersIcon />,
     },
     {
       title: "Genomes",
+      color: "purple",
       url: "/genomes",
-      icon: <GenomesIcon className="text-purple-500" />,
+      icon: <GenomesIcon />,
     },
     {
       title: "Learn",
+      color: "orange",
       url: "/learn",
-      icon: <LearnIcon className="text-amber-500" />,
+      icon: <LearnIcon />,
     },
   ],
 };

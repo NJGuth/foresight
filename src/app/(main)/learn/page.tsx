@@ -4,6 +4,21 @@ export default function ProjectsPage() {
   return (
     <main>
       <div className="grid grid-cols-12 ">
+        <p className="col-span-12 my-2">Base</p>
+        <div className="bg-base-1 w-full h-20" />
+        <div className="bg-base-2 w-full h-20" />
+        <div className="bg-base-3 w-full h-20" />
+        <div className="bg-base-4 w-full h-20" />
+        <div className="bg-base-5 w-full h-20" />
+        <div className="bg-base-6 w-full h-20" />
+        <div className="bg-base-7 w-full h-20" />
+        <div className="bg-base-8 w-full h-20" />
+        <div className="bg-base-9 w-full h-20" />
+        <div className="bg-base-10 w-full h-20" />
+        <div className="bg-base-11 w-full h-20" />
+        <div className="bg-base-12 w-full h-20" />
+      </div>
+      <div className="grid grid-cols-12 ">
         <p className="col-span-12 my-2">Grass</p>
         <div className="bg-grass-1 w-full h-20" />
         <div className="bg-grass-2 w-full h-20" />

@@ -12,7 +12,7 @@ export default function OrgNav() {
   //   if (!organization) return null;
 
   return (
-    <div className="grid gap-2 p-2 ">
+    <div className="grid gap-2 px-2.5 py-2 ">
       <div className="flex justify-between">
         <Avatar className="w-12 h-12 rounded-md border">
           {/* <AvatarImage src={organization.imageUrl} alt={organization.name} /> */}
