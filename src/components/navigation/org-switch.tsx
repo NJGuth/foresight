@@ -7,14 +7,14 @@ import {
   CommandEmpty,
   CommandGroup,
   CommandInput,
-  CommandItem,
+  // CommandItem,
   CommandList,
 } from "@/components/ui/command";
 import { LayoutGridIcon } from "lucide-react";
-import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar";
+// import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar";
 import { Button } from "../ui/button";
 import Link from "next/link";
-import { cn } from "@/lib/utils";
+// import { cn } from "@/lib/utils";
 
 export function OrgSwitch() {
   const [open, setOpen] = React.useState(false);
