@@ -35,22 +35,22 @@ export function MainNav({
             asChild
             isActive={item.isActive ?? pathname === item.url}
             className={cn(
-              "h-12 transition-all duration-300  ease-out rounded-2xl pl-2 active:text-accent-foreground data-[active=true]:bg-accent hover:bg-accent active:bg-accent/90 scale-100 active:scale-95",
+              "h-12 transition-all text-base-9 duration-300  ease-out rounded-2xl pl-2 active:text-accent-foreground data-[active=true]:bg-accent hover:bg-accent active:bg-accent/90 scale-100 active:scale-95",
               item.color === "blue" &&
-                "data-[active=true]:text-blue-11 hover:text-blue-11 active:text-blue-11/90 data-[active=true]:bg-blue-3  dark:data-[active=true]:bg-blue-3/50 hover:bg-blue-3 active:bg-blue-4",
+                "data-[active=true]:text-blue-11 text-blue-9 hover:text-blue-11 active:text-blue-11/90 data-[active=true]:bg-blue-3  dark:data-[active=true]:bg-blue-3/50 hover:bg-blue-3 active:bg-blue-4",
               item.color === "green" &&
-                "data-[active=true]:text-green-11 hover:text-green-11 active:text-green-11/90 data-[active=true]:bg-green-3 dark:data-[active=true]:bg-green-3/50 hover:bg-green-3 active:bg-green-4",
+                "data-[active=true]:text-green-11 text-green-9 hover:text-green-11 active:text-green-11/90 data-[active=true]:bg-green-3 dark:data-[active=true]:bg-green-3/50 hover:bg-green-3 active:bg-green-4",
               item.color === "purple" &&
-                "data-[active=true]:text-purple-11 hover:text-purple-11 active:text-purple-11/90 data-[active=true]:bg-purple-3 hover:bg-purple-3 dark:data-[active=true]:bg-purple-3/50 active:bg-purple-4",
+                "data-[active=true]:text-purple-11 text-purple-9 hover:text-purple-11 active:text-purple-11/90 data-[active=true]:bg-purple-3 hover:bg-purple-3 dark:data-[active=true]:bg-purple-3/50 active:bg-purple-4",
               item.color === "orange" &&
-                "data-[active=true]:text-orange-11 hover:text-orange-11 active:text-orange-11/90 data-[active=true]:bg-orange-3 hover:bg-orange-3 dark:data-[active=true]:bg-orange-3/50 active:bg-orange-4 ",
+                "data-[active=true]:text-orange-11 text-orange-9 hover:text-orange-11 active:text-orange-11/90 data-[active=true]:bg-orange-3 hover:bg-orange-3 dark:data-[active=true]:bg-orange-3/50 active:bg-orange-4 ",
               item.color === "crimson" &&
-                "data-[active=true]:text-crimson-11 hover:text-crimson-11 active:text-crimson-11/90 data-[active=true]:bg-crimson-3 hover:bg-crimson-3 active:bg-crimson-4"
+                "data-[active=true]:text-crimson-11 text-crimson-9 hover:text-crimson-11 active:text-crimson-11/90 data-[active=true]:bg-crimson-3 hover:bg-crimson-3 active:bg-crimson-4"
             )}
           >
             <Link href={item.url} onClick={() => setOpenMobile(false)}>
               <span className={cn("mx-2 size-6")}>{item.icon}</span>
-              <span className="text-lg font-medium tracking-wide">
+              <span className="text-lg  font-medium tracking-wide">
                 {item.title}
               </span>
             </Link>

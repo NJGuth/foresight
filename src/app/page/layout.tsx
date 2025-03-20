@@ -7,10 +7,10 @@ import { ReactNode } from "react";
 export default function PageLayout({ children }: { children: ReactNode }) {
   return (
     <SidebarProvider>
-      <SidebarInset className="">
+      <div className="w-full">
         <PageHeader title="SubPage" fromRoute="projects" />
         <PageContainer>{children}</PageContainer>
-      </SidebarInset>
+      </div>
       <PageSidebar />
     </SidebarProvider>
   );

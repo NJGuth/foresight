@@ -1,21 +1,45 @@
+import { Button } from "@/components/ui/button";
+import { DatePicker } from "@/components/ui/date-picker";
+import { Disclosure } from "@/components/ui/disclosure";
+import { Input } from "@/components/ui/input";
+import { MultiSelect } from "@/components/ui/multi-select";
 import {
-  ProjectsIcon,
-  GenomesIcon,
-  LeadersIcon,
-  LearnIcon,
-} from "@/components/icons";
-import Link from "next/link";
+  Select,
+  SelectItem,
+  SelectTrigger,
+  SelectContent,
+  SelectValue,
+} from "@/components/ui/select";
+import { Textarea } from "@/components/ui/textarea";
 
 export default function LeadersPage() {
   return (
-    <Link href="/page">
-      <h2>Leaders</h2>
-      <div className="grid grid-cols-4 gap-1">
-        <ProjectsIcon className="size-8 text-blue-500" />
-        <GenomesIcon className="size-8 text-blue-500" />
-        <LeadersIcon className="size-8 text-blue-500" />
-        <LearnIcon className="size-8 text-blue-500" />
+    <div>
+      <div className="space-y-4">
+        <h2>Inputs</h2>
+        <Input placeholder="Input" />
+        <Textarea placeholder="Textarea" />
+        <DatePicker />
+        <MultiSelect />
+        <Select>
+          <SelectTrigger>
+            <SelectValue placeholder="Theme" />
+          </SelectTrigger>
+          <SelectContent>
+            <SelectItem value="light">Light</SelectItem>
+            <SelectItem value="dark">Dark</SelectItem>
+            <SelectItem value="system">System</SelectItem>
+          </SelectContent>
+        </Select>
+        <Disclosure>
+          <div className="flex items-center justify-between w-full h-10 gap-2 ">
+            <p>Test Row</p>
+            <Button variant="outline" size="sm">
+              Action
+            </Button>
+          </div>
+        </Disclosure>
       </div>
-    </Link>
+    </div>
   );
 }

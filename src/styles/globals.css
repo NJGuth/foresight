@@ -7,7 +7,7 @@
 /* HTML Styles */
 @layer base {
   * {
-    @apply border-border outline-ring/50;
+    @apply border-border outline-ring/50 caret-caret;
   }
   body {
     @apply bg-background text-foreground font-sans;
@@ -41,6 +41,7 @@
   --color-popover: var(--color-base-2);
   --color-popover-foreground: var(--color-base-12);
   --color-destructive: var(--color-red-9);
+  --color-destructive-background: var(--color-red-9);
   --color-destructive-foreground: var(--color-white);
 
   /* Sidebar */
@@ -62,8 +63,11 @@
 
   /* Inputs */
   --color-input: var(--color-base-7);
+  --color-input-background: var(--color-base-2);
+  --color-placeholder: var(--color-base-11);
+  --color-input-focused: var(--color-plum-8);
   --color-ring: var(--color-plum-7);
-  --color-carrat: var(--color-plum-9);
+  --color-caret: var(--color-plum-11);
 
   /* Radius */
   --radius-sm: calc(var(--radius) - 4px);
