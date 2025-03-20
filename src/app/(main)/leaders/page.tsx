@@ -34,9 +34,6 @@ export default function LeadersPage() {
         <Disclosure>
           <div className="flex items-center justify-between w-full h-10 gap-2 ">
             <p>Test Row</p>
-            <Button variant="outline" size="sm">
-              Action
-            </Button>
           </div>
         </Disclosure>
       </div>
