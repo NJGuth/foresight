@@ -7,7 +7,7 @@ import { GenomesIcon } from "../icons";
 import { Badge } from "./badge";
 import Link from "next/link";
 
-let options = [
+const options = [
   {
     title: "Individual Leadership Project",
     description:
@@ -44,18 +44,17 @@ function RadioCards() {
           value={option.value}
           key={option.title}
           className={cn(
-            "text-left flex md:flex-row flex-col  p-4 border outline-none  rounded-md shadow-xs border-input bg-card text-card-foreground",
+            "text-left isolate group transition-all duration-300 ease-out hover:bg-input-background/50 flex md:flex-row flex-col  p-4 border outline-none  rounded-md shadow-xs border-input bg-card text-card-foreground",
             "hover:border-input-focused relative",
             "data-[state=checked]:bg-accent/20 data-[state=checked]:border-input-focused data-[state=checked]:ring-1 data-[state=checked]:ring-ring/50 data-[state=checked]:ring-offset-2",
             "ring-offset-background focus-visible:ring-input-focused focus-visible:ring-[3px]",
             selectedValue === option.value && "border-input-focused "
           )}
         >
-          {selectedValue === option.value && (
-            <div className="absolute flex items-center justify-center rounded-md -top-2.5 -right-2.5 size-6 bg-primary text-primary-foreground">
-              <CheckIcon className="size-4" />
-            </div>
-          )}
+          <div className="absolute flex items-center justify-center rounded-md -top-2.5 group-data-[state=checked]:scale-100 -right-2.5 size-6 bg-primary text-primary-foreground scale-0 transition-all  duration-500 ease-in-out hover:scale-100">
+            <CheckIcon className="size-4" />
+          </div>
+
           <div className="flex items-center justify-center ml-2 md:ml-0 size-10 text-red-9">
             <GenomesIcon className="size-8" />
           </div>
