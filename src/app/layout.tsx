@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Inter } from "next/font/google";
-import { swissFont } from "@/styles/fonts";
+
 import "@/styles/globals.css";
 
 import { ThemeProvider } from "@/components/utility/theme-provider";
@@ -31,7 +31,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body
         className={`
-          ${geistSans.variable} ${inter.variable} ${swissFont.variable}
+          ${geistSans.variable} ${inter.variable} 
            antialiased`}
       >
         <ThemeProvider

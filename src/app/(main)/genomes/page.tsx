@@ -4,9 +4,9 @@ import Link from "next/link";
 
 export default function ProjectsPage() {
   return (
-    <Link href="/page">
+    <div>
       <h2>Genomes</h2>
       <ValuesRadar data={ValueData} />
-    </Link>
+    </div>
   );
 }

@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function ProjectsPage() {
   return (
-    <Link href="/page">
+    <Link href="/page" className="outline-none">
       <ScrollTest />
     </Link>
   );
