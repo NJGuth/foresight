@@ -92,7 +92,7 @@ export function MultiSelect() {
       onKeyDown={handleKeyDown}
       className="overflow-visible bg-transparent"
     >
-      <div className="px-3 py-2 text-sm border rounded-md group hover:bg-input-background border-input ring-offset-background focus-within:ring-2 focus-within:ring-ring focus-within:ring-offset-2 focus-within:border-input-focused">
+      <div className="px-3 py-2 text-sm border rounded-md shadow-xs group hover:bg-input-background border-input ring-offset-background focus-within:ring-2 focus-within:ring-ring focus-within:ring-offset-2 focus-within:border-input-focused">
         <div className="flex flex-wrap gap-1">
           {selected.map((framework) => {
             return (

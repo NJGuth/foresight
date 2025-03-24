@@ -20,9 +20,9 @@ export function DatePicker() {
     <Popover>
       <PopoverTrigger asChild>
         <Button
-          variant={"outline"}
+          variant={"field"}
           className={cn(
-            "w-full justify-start hover:bg-input-background text-left font-normal",
+            "w-full justify-start hover:bg-input-background text-left font-normal cursor-pointer",
             !date && "text-muted-foreground"
           )}
         >

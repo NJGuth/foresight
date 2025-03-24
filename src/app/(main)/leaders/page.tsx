@@ -1,7 +1,10 @@
+import { LeadersIcon } from "@/components/icons";
+import { Button } from "@/components/ui/button";
 import { DatePicker } from "@/components/ui/date-picker";
-import { Disclosure } from "@/components/ui/disclosure";
+import { Disclosure, DisclosureRow } from "@/components/ui/disclosure";
 import { Input } from "@/components/ui/input";
 import { MultiSelect } from "@/components/ui/multi-select";
+import { RadioCards } from "@/components/ui/radio-cards";
 import {
   Select,
   SelectItem,
@@ -30,11 +33,19 @@ export default function LeadersPage() {
             <SelectItem value="system">System</SelectItem>
           </SelectContent>
         </Select>
-        <Disclosure>
-          <div className="flex items-center justify-between w-full h-10 gap-2 ">
-            <p>Test Row</p>
-          </div>
+        <Disclosure
+          title="Make Project Private"
+          description="Only selected members to view and edit this project"
+          icon={<LeadersIcon />}
+        >
+          <DisclosureRow>
+            <p>Row of data</p>
+            <Button variant="outline" size="sm">
+              Remove
+            </Button>
+          </DisclosureRow>
         </Disclosure>
+        <RadioCards />
       </div>
     </div>
   );
