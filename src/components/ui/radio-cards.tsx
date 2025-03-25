@@ -32,7 +32,7 @@ const options = [
 ];
 
 function RadioCards() {
-  const [selectedValue, setSelectedValue] = useState(options[0].value);
+  const [selectedValue, setSelectedValue] = useState<string | null>(null);
 
   return (
     <RadioGroup.Root

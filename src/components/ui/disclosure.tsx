@@ -69,7 +69,7 @@ function Disclosure({
           />
         </div>
       </CollapsibleTrigger>
-      <CollapsibleContent className="">
+      <CollapsibleContent>
         <div className="px-3 divide-y">{children}</div>
       </CollapsibleContent>
     </Collapsible>
